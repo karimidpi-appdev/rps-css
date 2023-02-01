@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>You played rock!</title>
-
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
+  <title>You played rock!</title>
+
+  <style>
+
+    .button {
+      color: teal; 
+      border: 1px teal solid; 
+      padding: 3px 5px 3px 5px; 
+      border-radius: 3px; 
+      text-decoration: none;
+    }
+
+    .player-card {
+      border: thin green solid;
+      width: 49%;
+    }
+
+    .computer-card {
+      border: thin red solid;
+      width: 49%;
+    }
+
+  </style>
 </head>
 
 <body>
   <div>
-    <a href="/rock">
+    <a class="button" href="/rock">
       Play Rock
     </a>
   </div>
 
   <div>
-    <a href="/paper">
+    <a class="button" href="/paper">
       Play Paper
     </a>
   </div>
 
   <div>
-    <a href="/scissors">
+    <a class="button" href="/scissors">
       Play Scissors
     </a>
   </div>
 
-  <h2>
-    We played rock!
-  </h2>
+  <div class="player-card">
+    <h2>
+      We played rock!
+    </h2>
+  </div>
 
-  <h2>
-    They played paper!
-  </h2>
+  <div class="computer-card">
+    <h2>
+      They played paper!
+    </h2>
+  </div>
 
-  <h2>
+  <h2 style="color: red;">
     We lost!
   </h2>
 
