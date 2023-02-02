@@ -4,12 +4,37 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Space Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px rgb(255, 123, 0) solid;
+  height: 100vh;
+}
+
+.container {
+  width: 960px;
+  border: 5px green solid;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
+}
+
+.row-center {
+  display: flex;
+  justify-content: center;
+
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.centered {
+  text-align: center;
 }
 
 .button {
@@ -32,6 +57,12 @@ body {
 .computer-card {
   border: thin red solid;
   width: 49%;
+}
+
+.outcome-card {
+  border: thin red solid;
+  background-color: pink;
+  width: 66%;
 }
 
 .one-third {
